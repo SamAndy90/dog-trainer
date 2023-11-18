@@ -5,13 +5,13 @@ import Reviews from "@/components/Home/Reviews/Reviews";
 import Services from "@/components/Home/Services/Services";
 
 export default function Home() {
-    return (
-        <>
-            <Hero />
-            <Services />
-            <About />
-            <Helping />
-            <Reviews />
-        </>
-    );
+  return (
+    <>
+      <Hero />
+      <Services />
+      <About />
+      <Helping />
+      <Reviews />
+    </>
+  );
 }

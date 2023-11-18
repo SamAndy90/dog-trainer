@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
+    "@typescript-eslint/eslint-plugin",
+    "@typescript-eslint/parser"
+  ],
+  "bracketSameLine": true
+}
