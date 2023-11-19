@@ -1,4 +1,4 @@
-import Arrow from "./static/Arrow.svg";
+// import Arrow from "./static/Arrow.svg";
 import HeroBG from "./static/hero-bg.jpg";
 import { Container } from "@/common/ui";
 import Image from "next/image";
@@ -16,18 +16,24 @@ function Hero() {
             className={
               "text-5xl font-semibold text-white md:text-[68px] md:font-bold "
             }>
-            <span className={"font-bold text-mainYellow-500 md:font-extrabold"}>
+            <span
+              className={
+                "font-caveat text-6xl font-bold text-mainYellow-500 md:text-[88px] md:font-extrabold"
+              }>
               Вікторія
             </span>{" "}
             - чарівна кінологиня
           </h1>
-          <p className={"mb-7 max-w-[500px] text-lg text-white md:text-2xl"}>
+          <p
+            className={
+              "mb-7 max-w-[500px] text-lg font-medium text-white md:text-xl"
+            }>
             Ваш експерт з комфортних відносин між Вами та Вашим песиком.
           </p>
           <Link
             href={"#contacts"}
             className={
-              "transition-color w-full rounded-lg bg-mainYellow-500 px-5 py-4 font-semibold duration-300 hover:bg-mainYellow-700  hover:text-white sm:w-auto"
+              "transition-color w-full rounded-lg bg-mainYellow-500 px-8 py-3 font-semibold duration-300 hover:bg-mainYellow-700  hover:text-white sm:w-auto"
             }>
             Отримати консультацію
           </Link>
@@ -39,13 +45,13 @@ function Hero() {
         fill
         className={"object-cover opacity-60"}
       />
-      <Link
+      {/* <Link
         href={"#about"}
         className={
           "absolute bottom-14 left-1/2 -translate-x-1/2 rounded-full p-4 transition-all hover:shadow-[0_0_15px_rgba(255,255,255,.7)]"
         }>
         <Image src={Arrow} alt={"Arrow"} className={"animate-bounce"} />
-      </Link>
+      </Link> */}
     </section>
   );
 }

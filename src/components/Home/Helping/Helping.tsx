@@ -9,7 +9,7 @@ import { Container, Title } from "@/common/ui";
 
 function Helping() {
   return (
-    <section id={"helping"} className={"py-7"}>
+    <section id={"helping"} className={"pb-7 pt-16"}>
       <Container>
         <div className={"py-4 text-center"}>
           <Title className={"mb-5"}>З чим я можу допомогти ?</Title>

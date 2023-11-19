@@ -12,17 +12,17 @@ function About() {
               src={AboutBG}
               alt={"About Background"}
               fill
-              className={"object-cover"}
+              className={"object-cover object-bottom"}
             />
           </div>
           <div
             className={
-              "basis-1/2 pb-28 pt-20 text-center sm:px-4 md:pb-32 md:pt-24 lg:pb-56 lg:pt-36"
+              "flex flex-col gap-8 py-20 text-center sm:px-4 md:basis-1/2 md:gap-10 md:pb-36 md:pt-24"
             }>
-            <Title className={"mb-5"}>Про мене</Title>
+            <Title>Про мене</Title>
             <div
               className={
-                "m-auto flex max-w-[500px] flex-col items-center gap-6 py-7 text-lg"
+                "m-auto flex max-w-[500px] flex-col items-center gap-5 text-lg"
               }>
               <p>
                 Професійний кінолог з 12річним досвідом та постійним підвищенням

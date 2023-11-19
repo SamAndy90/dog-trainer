@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function Services() {
   return (
-    <section id={"services"} className={"py-20"}>
+    <section id={"services"} className={"pt-20 md:py-20"}>
       <Container>
         <div className={"mb-6 text-center"}>
           <Title className={"mb-5"}>Послуги</Title>
@@ -35,7 +35,9 @@ function Services() {
               "mx-auto flex max-w-2xl flex-col items-center justify-start gap-7 rounded-3xl px-5 py-7 shadow-[0_0_15px_rgba(0,0,0,0.1)] transition-shadow duration-500 hover:shadow-[0_0_20px_rgba(0,0,0,0.2)] lg:basis-1/3"
             }>
             <Image src={Lessons} alt={"Icon"} />
-            <h3 className={"text-2xl font-bold"}>Онлайн/офлайн заняття</h3>
+            <h3 className={"text-center text-2xl font-bold"}>
+              Онлайн/офлайн заняття
+            </h3>
             <ul
               className={
                 "box-content flex-auto list-inside list-disc self-start text-lg"

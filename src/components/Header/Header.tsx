@@ -23,7 +23,7 @@ function Header() {
         "fixed z-50 w-full overflow-visible bg-mainBrown-900/30 py-4 text-white backdrop-blur-[8px] md:py-6"
       }>
       <Container>
-        <div className={"flex items-center justify-between gap-4"}>
+        <div className={"flex items-center justify-between gap-12"}>
           <Link href={"/"} className={"md:pl-7"}>
             <Logo />
           </Link>
@@ -41,6 +41,18 @@ function Header() {
                   "relative transition-all duration-200 after:absolute after:block after:h-[2px] after:w-full after:scale-x-0 after:rounded after:bg-mainYellow-500 after:transition-all after:delay-100 after:duration-200 hover:text-mainYellow-500 hover:after:scale-x-100"
                 }>
                 <Link href={"#services"}>Послуги</Link>
+              </li>
+              <li
+                className={
+                  "relative transition-all duration-200 after:absolute after:block after:h-[2px] after:w-full after:scale-x-0 after:rounded after:bg-mainYellow-500 after:transition-all after:delay-100 after:duration-200 hover:text-mainYellow-500 hover:after:scale-x-100"
+                }>
+                <Link href={"#guide"}>Гайд</Link>
+              </li>
+              <li
+                className={
+                  "relative transition-all duration-200 after:absolute after:block after:h-[2px] after:w-full after:scale-x-0 after:rounded after:bg-mainYellow-500 after:transition-all after:delay-100 after:duration-200 hover:text-mainYellow-500 hover:after:scale-x-100"
+                }>
+                <Link href={"#telegram"}>Телеграм</Link>
               </li>
               <li
                 className={
@@ -92,6 +104,19 @@ function Header() {
                     Послуги
                   </Link>
                 </li>
+                <li
+                  className={
+                    "relative transition-all duration-200 after:absolute after:block after:h-[2px] after:w-full after:scale-x-0 after:rounded after:bg-mainYellow-500 after:transition-all after:delay-100 after:duration-200 hover:text-mainYellow-500 hover:after:scale-x-100"
+                  }>
+                  <Link href={"#guide"}>Гайд</Link>
+                </li>
+                <li
+                  className={
+                    "relative transition-all duration-200 after:absolute after:block after:h-[2px] after:w-full after:scale-x-0 after:rounded after:bg-mainYellow-500 after:transition-all after:delay-100 after:duration-200 hover:text-mainYellow-500 hover:after:scale-x-100"
+                  }>
+                  <Link href={"#telegram"}>Телеграм</Link>
+                </li>
+
                 <li
                   className={
                     "relative transition-all duration-200 after:absolute after:block after:h-[2px] after:w-full after:scale-x-0 after:rounded after:bg-mainYellow-500 after:transition-all after:delay-100 after:duration-200 hover:text-mainYellow-500 hover:after:scale-x-100"
