@@ -26,7 +26,6 @@ function Reviews() {
               centeredSlides={true}
               spaceBetween={15}
               autoHeight={true}
-              loop={true}
               speed={1000}
               autoplay={{
                 delay: 3000,
