@@ -38,6 +38,7 @@ function Reviews() {
                 1024: {
                   slidesPerView: 3,
                   spaceBetween: 30,
+                  centeredSlides: false,
                 },
               }}>
               {reviews.map((i) => {
