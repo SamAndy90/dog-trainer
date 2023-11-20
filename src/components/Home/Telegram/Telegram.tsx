@@ -28,7 +28,7 @@ function Telegram() {
             href={"https://t.me/+acx0QxsdlGUzZWUy"}
             target={"_blank"}
             className={
-              "transition-color rounded-lg bg-mainYellow-500 px-8 py-3 font-semibold duration-300 hover:bg-mainYellow-600 hover:text-white sm:self-center"
+              "transition-color w-full rounded-lg bg-mainYellow-500 px-8 py-3 font-semibold duration-300 hover:bg-mainYellow-600 hover:text-white sm:w-auto sm:self-center"
             }>
             Перейти
           </Link>

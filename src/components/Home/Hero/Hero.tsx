@@ -1,4 +1,3 @@
-// import Arrow from "./static/Arrow.svg";
 import HeroBG from "./static/hero-bg.jpg";
 import { Container } from "@/common/ui";
 import Image from "next/image";
@@ -6,11 +5,11 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <section className={"relative h-screen bg-black"}>
+    <section className={"relative box-border bg-black"}>
       <Container className={"flex h-full items-center justify-center"}>
         <div
           className={
-            "z-10 flex flex-col items-center justify-center gap-y-7 text-center"
+            "z-10 flex min-h-screen flex-col items-center justify-center gap-y-7 py-16 text-center"
           }>
           <h1
             className={
@@ -45,13 +44,6 @@ function Hero() {
         fill
         className={"object-cover opacity-60"}
       />
-      {/* <Link
-        href={"#about"}
-        className={
-          "absolute bottom-14 left-1/2 -translate-x-1/2 rounded-full p-4 transition-all hover:shadow-[0_0_15px_rgba(255,255,255,.7)]"
-        }>
-        <Image src={Arrow} alt={"Arrow"} className={"animate-bounce"} />
-      </Link> */}
     </section>
   );
 }

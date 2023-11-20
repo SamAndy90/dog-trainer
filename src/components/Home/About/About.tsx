@@ -12,7 +12,7 @@ function About() {
               src={AboutBG}
               alt={"About Background"}
               fill
-              className={"object-cover object-bottom"}
+              className={"object-cover object-bottom max-w-[500px] md:max-w-none mx-auto"}
             />
           </div>
           <div

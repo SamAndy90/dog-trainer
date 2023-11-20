@@ -1,12 +1,9 @@
 "use client";
 
 import CardReview from "./CardReview";
-import Avatar1 from "./static/avatar1.jpg";
-import Avatar2 from "./static/avatar2.jpg";
-import Avatar3 from "./static/avatar3.jpg";
 import ReviewsBG from "./static/reviews.jpg";
 import { Container, Title } from "@/common/ui";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -25,17 +22,19 @@ function Reviews() {
           <div className={"justify-self-stretch sm:px-10"}>
             <Swiper
               modules={[Autoplay]}
-              slidesPerView={1}
+              slidesPerView={1.1}
+              centeredSlides={true}
               spaceBetween={15}
               autoHeight={true}
               loop={true}
-              speed={1200}
+              speed={1000}
               autoplay={{
-                delay: 4000,
+                delay: 3000,
               }}
               breakpoints={{
-                640: {
-                  slidesPerView: 2,
+                768: {
+                  slidesPerView: 2.1,
+                  centeredSlides: false,
                 },
                 1024: {
                   slidesPerView: 3,
@@ -46,8 +45,6 @@ function Reviews() {
                 return (
                   <SwiperSlide className={"rounded-3xl"} key={i.id}>
                     <CardReview
-                      avatar={i.avatar}
-                      altAvatar={i.altAvatar}
                       name={i.name}
                       ocupation={i.ocupation}
                       text={i.text}
@@ -63,7 +60,7 @@ function Reviews() {
         src={ReviewsBG}
         alt={"Reviews background"}
         fill
-        className={"object-cover opacity-70"}
+        className={"object-cover object-top opacity-70"}
       />
     </section>
   );
@@ -73,8 +70,6 @@ export default Reviews;
 
 export type ReviewType = {
   id: number;
-  avatar?: StaticImageData;
-  altAvatar?: string;
   name: string;
   ocupation?: string;
   text: string;
@@ -83,24 +78,18 @@ export type ReviewType = {
 const reviews: ReviewType[] = [
   {
     id: 1,
-    avatar: Avatar1,
-    altAvatar: "Avatar",
     name: "Юля з Джаредом",
     ocupation: "Коргі",
     text: "Best of the best кінологів💜 Якщо ви хочете в результаті тренінгу отримати психічно здорового комфортного собаку-друга, то вам однозначно сюди!Різносторонній підхід з розумом, не тільки однобока слухняність. Головне не забувати що результат тренінгу залежить не тільки від кінолога, а й від власника.",
   },
   {
     id: 2,
-    avatar: Avatar2,
-    altAvatar: "Avatar",
     name: "Даша і Вольт",
     ocupation: "Коргі",
     text: "Вибір собаки для мене став відповідальним, трепетним, і саме цю справу я вирішила довірити саме Віці! Маючи спочатку тривожного і невпевненого цуценя, я отримала здорову, що фізично, що психічно собаку прекрасну як у побуті, так і на вулиці. А чому? Тому що в мене був і є кінолог із знанням своєї справи! Індивідуальний підхід, вміння донести ПОТРІБНУ інформацію САМЕ ВАМ, а також безмежна підтримка та віра в успіх 🫶",
   },
   {
     id: 3,
-    avatar: Avatar3,
-    altAvatar: "Avatar",
     name: "Саша і Кріс",
     ocupation: "Коргі",
     text: "Віка – наш п'ятий за рахунком кінолог. Прийшовши до неї я зрозуміла, що тут потрібно залишитися) зараз у мене супер слухняний пес, який чує мене, який навчився грати та працювати за м'яч. Не знаю щоб ми робили без Вікі💜",

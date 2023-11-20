@@ -32,6 +32,7 @@ function Guide() {
             </div>
             <Link
               href={"https://secure.wayforpay.com/payment/s94ea0e6b54e2"}
+              target={"_blank"}
               className={
                 "transition-color rounded-lg bg-mainYellow-500 px-8 py-3 font-semibold duration-300 hover:bg-mainYellow-600 hover:text-white sm:self-center"
               }>
@@ -43,7 +44,7 @@ function Guide() {
               src={GuideBG}
               alt={"Guide Background"}
               fill
-              className={"object-cover"}
+              className={"mx-auto max-w-[500px] object-cover md:max-w-none"}
             />
           </div>
         </div>

@@ -38,7 +38,10 @@ function Footer() {
                   "p-2.5 text-center text-3xl font-semibold md:text-left"
                 }>
                 <h3 className={"md:mb-2.5"}>
-                  Кінолог <span className={"text-mainYellow-500"}>Віка</span>
+                  Кінолог{" "}
+                  <span className={"font-caveat text-4xl text-mainYellow-500"}>
+                    Вікторія
+                  </span>
                 </h3>
                 <h3>Чарівна кінологиня</h3>
               </div>
@@ -50,19 +53,6 @@ function Footer() {
               <Link href={"/"}>
                 <Logo />
               </Link>
-
-              {/* <div className={"flex flex-col gap-2.5"}>
-                <a
-                  className={"transition-colors hover:text-mainYellow-500"}
-                  href={"mailto:example@gmail.com"}>
-                  example@gmail.com
-                </a>
-                <a
-                  className={"transition-colors hover:text-mainYellow-500"}
-                  href={"tel:+38(099)-99-99-999"}>
-                  +38(099)-99-99-999
-                </a>
-              </div> */}
               <div className={"flex items-start gap-5"}>
                 <a
                   href={

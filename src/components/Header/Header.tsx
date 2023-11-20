@@ -27,7 +27,7 @@ function Header() {
           <Link href={"/"} className={"md:pl-7"}>
             <Logo />
           </Link>
-          <nav className={"hidden md:block md:pr-10"}>
+          <nav className={"hidden md:pr-10 lg:block"}>
             <ul
               className={"flex flex-wrap items-center justify-center gap-x-10"}>
               <li
@@ -79,7 +79,7 @@ function Header() {
             <ButtonBase
               className={{
                 button:
-                  "absolute right-3 top-4 appearance-none text-white transition-all duration-200 hover:text-mainYellow-500 md:hidden",
+                  "absolute right-3 top-4 appearance-none text-white transition-all duration-200 hover:text-mainYellow-500 lg:hidden",
               }}
               title={"Close mobile menu"}
               onClick={() => setMenuIsOpen(false)}>
@@ -140,7 +140,7 @@ function Header() {
           <ButtonBase
             type={"button"}
             className={{
-              button: "block appearance-none md:hidden",
+              button: "block appearance-none lg:hidden",
             }}
             onClick={() => setMenuIsOpen(true)}
             title={"Open mobile menu"}>

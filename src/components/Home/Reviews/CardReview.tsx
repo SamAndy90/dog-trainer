@@ -9,13 +9,6 @@ function CardReview({ name, text, ocupation }: CardReviewProps) {
         "flex min-h-[280px] flex-col gap-5 rounded-3xl bg-white px-5 py-7"
       }>
       <div className={"flex items-center justify-start gap-5"}>
-        {/* <Image
-          src={avatar}
-          alt={altAvatar}
-          width={50}
-          height={50}
-          className={"rounded-full"}
-        /> */}
         <div>
           <h5 className={"text-lg font-extrabold"}>{name}</h5>
           <p className={"text-sm font-light text-black/60"}>{ocupation}</p>
