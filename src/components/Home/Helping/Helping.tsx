@@ -70,7 +70,7 @@ const helpCardsData = [
     icon: Icon5,
     altIcon: "Icon",
     title: "Базові команди",
-    description: "Сидіти, лежати, стояти",
+    description: "Сидіти, лежати, стояти, поруч, до мене, побутова витримка",
   },
   {
     id: 6,

@@ -7,12 +7,17 @@ function About() {
     <section id={"about"}>
       <Container>
         <div className={"flex flex-col-reverse md:flex-row"}>
-          <div className={"relative h-screen md:h-auto md:basis-1/2"}>
+          <div
+            className={
+              "relative h-[70vh] min-h-[420px] md:h-auto md:basis-1/2"
+            }>
             <Image
               src={AboutBG}
               alt={"About Background"}
               fill
-              className={"object-cover object-bottom max-w-[500px] md:max-w-none mx-auto"}
+              className={
+                "mx-auto max-w-[500px] object-cover object-bottom md:max-w-none"
+              }
             />
           </div>
           <div

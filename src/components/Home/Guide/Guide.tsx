@@ -39,12 +39,17 @@ function Guide() {
               Придбати гайд
             </Link>
           </div>
-          <div className={"relative h-screen md:h-auto md:basis-1/2"}>
+          <div
+            className={
+              "relative h-[70vh] min-h-[420px] md:h-auto md:basis-1/2"
+            }>
             <Image
               src={GuideBG}
               alt={"Guide Background"}
               fill
-              className={"mx-auto max-w-[500px] object-cover md:max-w-none"}
+              className={
+                "mx-auto max-w-[500px] object-cover object-top md:max-w-none"
+              }
             />
           </div>
         </div>

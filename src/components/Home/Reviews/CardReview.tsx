@@ -2,7 +2,7 @@ import { ReviewType } from ".";
 
 type CardReviewProps = Omit<ReviewType, "id">;
 
-function CardReview({ name, text, ocupation }: CardReviewProps) {
+function CardReview({ name, text, breed }: CardReviewProps) {
   return (
     <div
       className={
@@ -11,7 +11,7 @@ function CardReview({ name, text, ocupation }: CardReviewProps) {
       <div className={"flex items-center justify-start gap-5"}>
         <div>
           <h5 className={"text-lg font-extrabold"}>{name}</h5>
-          <p className={"text-sm font-light text-black/60"}>{ocupation}</p>
+          <p className={"text-sm font-light text-black/60"}>{breed}</p>
         </div>
       </div>
       <p className={"flex-auto text-black/70"}>{text}</p>
