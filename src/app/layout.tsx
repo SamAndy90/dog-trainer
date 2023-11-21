@@ -16,8 +16,8 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Dog trainer",
-  description: "blog description",
+  title: "CorgiMom",
+  description: "Dog trainer Vika",
 };
 
 export default function RootLayout({
