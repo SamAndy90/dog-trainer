@@ -17,7 +17,7 @@ const caveat = Caveat({
 
 export const metadata: Metadata = {
   title: "CorgiMom",
-  description: "Dog trainer Vika",
+  description: "Dog-trainer Viktoria",
   icons: {
     icon: [
       {
@@ -37,7 +37,6 @@ export const metadata: Metadata = {
     },
   },
   manifest: "/site.webmanifest",
-  themeColor: "#ffffff",
   other: {
     "msapplication-TileColor": "#ffffff",
   },
