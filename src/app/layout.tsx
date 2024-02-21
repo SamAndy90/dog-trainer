@@ -18,7 +18,7 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "CorgiMom",
   description: "Viktoria - the best dog-trainer ever",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_VERCEL_URL ?? ""),
+  metadataBase: new URL(process.env.DEPLOY_URL ?? ""),
   icons: {
     icon: [
       {
