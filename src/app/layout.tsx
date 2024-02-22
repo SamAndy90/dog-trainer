@@ -18,7 +18,10 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "CorgiMom",
   description: "Viktoria - the best dog-trainer ever",
-  metadataBase: new URL(process.env.DEPLOY_URL ?? ""),
+  // metadataBase: new URL(process.env.DEPLOY_URL ?? ""),
+  openGraph: {
+    images: "./opengraph-image.png",
+  },
   icons: {
     icon: [
       {
